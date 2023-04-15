@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="phonebook-container">
+      <header class="phonebook-header">
+        <h1 class="title-primary color-light">Phone Book</h1>
+      </header>
+      <form class="phonebook-form">
+        <h1 class="title-primary">Save Your Important Contacts</h1>
+        <div class="phonebook-form__input-container">
+          <label for="name">Person Name</label>
+          <input class="name-input" type="text" placeholder="John Doe" />
+        </div>
+        <div class="phonebook-form__input-container">
+          <label for="phone">Person Phone</label>
+          <input class="phone-input" type="tel" placeholder="000-000-0000" />
+        </div>
+        <button class="btn btn-primary btn-submit" type="submit">Submit</button>
+      </form>
+      <section class="phonebook-contacts">
+        <div class="search-container">
+          <input class="search-input" type="text" placeholder="Search" />
+          <span class="icon-btn btn-search"
+            ><ion-icon name="search-outline"></ion-icon
+          ></span>
+        </div>
+        <header class="phonebook-contacts__header">
+          <span class="contacts-head">Name</span
+          ><span class="contacts-head">Contact</span>
+          <span class="btn-sort icon-btn"
+            ><ion-icon name="funnel-outline"></ion-icon
+          ></span>
+        </header>
+
+        <ul class="phonebook-contacts__list">
+          <!-- <li>
+            <span class="phonebook-contacts__list-name">John Doe</span>
+            <span class="phonebook-contacts__list-contact">000-123-1234</span>
+            <div class="phonebook-contacts__list-btns">
+              <button class="btn btn-primary btn-edit">Edit</button>
+              <button class="btn btn-danger btn-delete">Delete</button>
+            </div>
+          </li> -->
+        </ul>
+      </section>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

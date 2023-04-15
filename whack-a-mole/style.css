@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.game-container {
+  text-align: center;
+  position: relative;
+}
+
+.game-header {
+  display: flex;
+
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+.game-start-btn {
+  width: 100px;
+}
+.timer-container {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.game-board {
+  height: 800px;
+  width: 800px;
+
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  grid-template-rows: repeat(3, 200px);
+  width: 800px;
+}
+.mole {
+  width: 200px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+}
+.mole:hover {
+  cursor: pointer;
+}
+.game-block {
+  border-radius: 50%;
+  border: 2px solid brown;
+  height: 200px;
+  width: 200px;
+}

@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-size: 62.5%;
+}
+p {
+  display: inline-block;
+}
+.game-container {
+  margin: 10rem auto;
+  width: 40rem;
+  height: 50rem;
+
+  background: #212837;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.game-console {
+  width: 100%;
+  flex: 8;
+  display: grid;
+  grid-template-columns: repeat(30, 1fr);
+  grid-template-rows: repeat(30, 1fr);
+}
+.game-pad {
+  width: 100%;
+  flex: 1;
+  background: #293447;
+  color: #dbdbdb;
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  justify-content: space-between;
+}
+.game-scores {
+  display: flex;
+  justify-content: space-between;
+  background: #293447;
+}

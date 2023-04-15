@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budget</title>
+    <link href="./style.css" rel="stylesheet" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <div class="app-container">
+      <div class="input-container">
+        <div class="budget-container">
+          <h1 class="title">Budget</h1>
+          <input
+            type="number"
+            placeholder="Enter Total Amount"
+            required
+            class="budget-input input"
+          />
+          <button class="btn set-budget-btn">Set Budget</button>
+        </div>
+        <div class="expense-container">
+          <h1 class="title">Expenses</h1>
+          <input
+            type="text"
+            placeholder="Enter Title of Product"
+            required
+            class="product-input input"
+          />
+          <input
+            type="number"
+            placeholder="Enter Cost of Product"
+            required
+            class="price-input input"
+          />
+          <button class="btn check-amount-btn">Check Amount</button>
+        </div>
+      </div>
+
+      <div class="total-container">
+        <table class="total-table">
+          <thead>
+            <tr>
+              <th>Tota Budget</th>
+              <th>Expenses</th>
+              <th>Balance</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="total-budget">0</td>
+              <td id="expense">0</td>
+              <td id="balance">0</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="list-container">
+        <h2 class="sub-title">expenses-list</h2>
+        <ul class="list">
+          <li>
+            <span class="list-title">Product Title</span>
+            <span class="list-price">$123</span>
+            <span class="list-btns">
+              <button class="icon btn-change">
+                <ion-icon
+                  name="pencil-outline"
+                  class="icon btn-change"
+                ></ion-icon>
+              </button>
+              <button class="icon btn-delete">
+                <ion-icon
+                  name="trash-outline"
+                  class="icon btn-change"
+                ></ion-icon>
+              </button>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

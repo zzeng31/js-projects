@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link href="./style.css" rel="stylesheet" />
+    <script defer src="./script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/0a9eadbc66.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="weather-container">
+      <div class="weather-app">
+        <div class="weather-app__container">
+          <div class="weather-app__search-box">
+            <span class="icon location-icon">
+              <ion-icon name="location-outline"></ion-icon
+            ></span>
+
+            <input
+              class="weather-app__input"
+              type="text"
+              placeholder="Enter your City"
+              required
+            />
+            <button class="icon search-icon">
+              <ion-icon name="search-outline"></ion-icon>
+            </button>
+          </div>
+
+          <div class="weather-app__weather-box">
+            <img src="./img/mist.png" class="img weather-img" />
+            <div class="weather-app__details">
+              <div class="degree-box">
+                <div class="degree-container">
+                  <h1 class="degree">1</h1>
+                  <h3 class="degree--symbol">&#8451;</h3>
+                </div>
+
+                <p class="weather">Snow</p>
+              </div>
+
+              <div class="details-container">
+                <div class="humidty-container">
+                  <span class="icon details-icon">
+                    <ion-icon name="water-outline"></ion-icon
+                  ></span>
+                  <h3 class="humidty">99%</h3>
+
+                  <label class="details-label">Humidity</label>
+                </div>
+                <div class="wind-container">
+                  <span class="icon details-icon">
+                    <ion-icon name="stats-chart-outline"></ion-icon
+                  ></span>
+                  <h3 class="wind">4Km/h</h3>
+                  <label class="details-label">Wind Speed</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="weather-app__not-found">
+            <img src="./img/404.png" class="img error-img" />
+            <h1 class="error-text">
+              Opps, location not found, please try again
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div class="weather-list"></div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
